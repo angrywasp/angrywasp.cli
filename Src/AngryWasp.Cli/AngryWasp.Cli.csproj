@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<Import Project="../../External/AngryWasp.Build/AngryWasp.Build.Library.targets"/>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AngryWasp.Cli</PackageId>
+    <Title>$(PackageId)</Title>
+    <Version>1.0.1</Version>
+    <Authors>AngryWasp</Authors>
+    <PackageDescription>Easily create CLI based applications</PackageDescription>
+    <PackageLicenseFile>AngryWasp.LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://bitbucket.org/angrywasp/angrywasp.cli</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../External/AngryWasp.Build/LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AngryWasp.Logger" Version="*"/>
+    <PackageReference Include="AngryWasp.Helpers" Version="*"/>
+  </ItemGroup>
+</Project>

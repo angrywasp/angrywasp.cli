@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<Import Project="../../External/AngryWasp.Build/AngryWasp.Build.Application.targets"/>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../External/AngryWasp.Build/LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AngryWasp.Logger" Version="*"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../AngryWasp.Cli/AngryWasp.Cli.csproj" />
+  </ItemGroup>
+</Project>
