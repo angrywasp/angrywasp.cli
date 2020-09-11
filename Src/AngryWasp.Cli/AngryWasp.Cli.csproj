@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 <Import Project="../../External/AngryWasp.Build/AngryWasp.Build.Library.targets"/>
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>AngryWasp.Cli</PackageId>
